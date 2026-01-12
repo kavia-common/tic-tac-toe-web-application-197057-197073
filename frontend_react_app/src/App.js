@@ -1,13 +1,13 @@
 import React from "react";
-import StarterPage from "./pages/StarterPage";
+import GamePage from "./pages/GamePage";
 import "./App.css";
 
 /**
- * App root. Currently renders the starter landing page at the root of the app.
+ * App root. Renders the Tic Tac Toe game UI as a single-page app.
  */
 // PUBLIC_INTERFACE
 function App() {
-  return <StarterPage />;
+  return <GamePage />;
 }
 
 export default App;

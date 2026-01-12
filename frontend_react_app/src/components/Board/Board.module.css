@@ -1,0 +1,31 @@
+.boardWrap {
+  display: grid;
+  place-items: center;
+}
+
+.board {
+  width: min(360px, 92vw);
+  aspect-ratio: 1 / 1;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+
+  padding: 12px;
+  border-radius: 16px;
+
+  background: linear-gradient(180deg, rgba(59, 130, 246, 0.08), rgba(100, 116, 139, 0.04));
+  border: 1px solid rgba(17, 24, 39, 0.08);
+
+  box-shadow:
+    0 14px 30px rgba(17, 24, 39, 0.06),
+    0 2px 6px rgba(17, 24, 39, 0.04);
+}
+
+@media (min-width: 768px) {
+  .board {
+    width: 420px;
+    gap: 12px;
+    padding: 14px;
+  }
+}

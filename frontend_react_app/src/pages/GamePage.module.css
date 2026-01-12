@@ -1,0 +1,133 @@
+.page {
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--text);
+}
+
+.header {
+  padding: 28px 18px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.brand {
+  width: 100%;
+  max-width: 880px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.logoMark {
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.95), rgba(6, 182, 212, 0.95));
+  box-shadow: 0 10px 22px rgba(59, 130, 246, 0.18);
+}
+
+.title {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+}
+
+.subtitle {
+  margin: 6px 0 0;
+  color: var(--secondary);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.main {
+  padding: 12px 18px 34px;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 880px;
+  background: var(--surface);
+  border: 1px solid rgba(17, 24, 39, 0.08);
+  border-radius: 18px;
+  padding: 22px 18px 18px;
+  box-shadow:
+    0 14px 30px rgba(17, 24, 39, 0.06),
+    0 2px 6px rgba(17, 24, 39, 0.04);
+}
+
+.statusRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.statusTitle {
+  margin: 0;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  color: var(--secondary);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.statusText {
+  margin: 6px 0 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.statusWin {
+  color: var(--primary);
+}
+
+.statusDraw {
+  color: #0f766e; /* deeper teal for readable draw state */
+}
+
+.resetButton {
+  appearance: none;
+  border: 1px solid rgba(17, 24, 39, 0.12);
+  background: #ffffff;
+  color: var(--text);
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease;
+  box-shadow: 0 8px 18px rgba(17, 24, 39, 0.06);
+}
+
+.resetButton:hover {
+  border-color: rgba(59, 130, 246, 0.45);
+  box-shadow: 0 10px 22px rgba(59, 130, 246, 0.12);
+  transform: translateY(-1px);
+}
+
+.resetButton:active {
+  transform: translateY(0);
+}
+
+.resetButton:focus-visible {
+  outline: 3px solid rgba(59, 130, 246, 0.35);
+  outline-offset: 3px;
+}
+
+.footer {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(17, 24, 39, 0.06);
+}
+
+.hint {
+  margin: 0;
+  font-size: 13px;
+  color: var(--secondary);
+  line-height: 1.5;
+}
